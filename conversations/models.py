@@ -11,7 +11,20 @@ class Conversation(core_models.TimeStampedModel):
     )
 
     def __str__(self):
-        return str(self.created)
+        usernames = []
+        for user in self.participants.all():
+            usernames.append(user.username)
+        return ", ".join(usernames)
+
+    def num_of_messages(self):
+        return self.messages.count()
+
+    num_of_messages.short_description = "Number of Messages"
+
+    def num_of_participants(self):
+        return self.participants.count()
+
+    num_of_participants.short_description = "Number of Participant"
 
 
 class Message(core_models.TimeStampedModel):
@@ -27,4 +40,4 @@ class Message(core_models.TimeStampedModel):
     )
 
     def __str__(self):
-        return f"{self.user} says: {self.text}"
+        return f"{self.user} says: {self.message}"
