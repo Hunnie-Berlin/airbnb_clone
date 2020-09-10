@@ -111,5 +111,3 @@ class Room(core_models.TimeStampedModel):
             return "No reviews"
         else:
             return all_ratings / len(all_reviews)
-
-        1
