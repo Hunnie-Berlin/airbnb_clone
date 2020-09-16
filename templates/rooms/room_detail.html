@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-<div>{% block page_name %} Detail {% endblock page_name %}</div>
+<div>{% block page_title %} {{room.name}} {% endblock page_title %}</div>
 
 {%block content %}
 <div>
@@ -8,8 +8,8 @@
 </div>
 <div>
   <h2>
-    By: {{room.host.username}} {% if room.host.superhost %} (superhost)
-    {%endif%}
+    By: {{room.host.username}} 
+    {% if room.host.superhost %} (superhost) {%endif%}
   </h2>
   <h3>Amenities</h3>
   <ul>
