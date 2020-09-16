@@ -4,6 +4,6 @@
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
   "python.pythonPath": "/Users/JASON/.local/share/virtualenvs/airbnb_clone-cHBfephD/bin/python",
-  "python.linting.flake8Args": ["--max-line-length = 88"],
+  "python.linting.flake8Args": ["--max-line-length = 88"]
   "prettier.disableLanguages": ["html"]
 }
