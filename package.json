@@ -1,0 +1,24 @@
+{
+  "name": "airbnb_clone",
+  "version": "1.0.0",
+  "description": ": using Python, Django, TailwindCSS and more ...",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hunnie-Berlin/airbnb_clone.git"
+  },
+  "scripts": {
+    "css": "gulp"
+  },
+  "homepage": "https://github.com/Hunnie-Berlin/airbnb_clone#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "gulp-csso": "^4.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1",
+    "tailwindcss": "^1.8.10"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
