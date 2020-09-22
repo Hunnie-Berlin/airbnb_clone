@@ -114,4 +114,8 @@ class Room(core_models.TimeStampedModel):
         if len(all_reviews) == 0:
             return "No reviews"
         else:
-            return all_ratings / len(all_reviews)
+            return round(all_ratings / len(all_reviews), 2)
+
+    def first_photo(self):
+        photo = self.photos.all()[0]
+        return photo.file.url
